@@ -1,0 +1,10 @@
+# fct_job.sub
+executable            = fct_job.sh
+log                   = fct_job.log
+output                = fct_outfile.txt
+error                 = fct_errors.txt
+getenv                = true
+should_transfer_files = YES
+transfer_input_files  = o2_env.sh
+requirements          = (Machine == "alice-serv14")
+queue
