@@ -71,3 +71,20 @@ c1->Print("YourOutputPath.pdf");
 to be your output path
 
 # V0_PaPlot.cxx
+This macro produces a histogram of the pointing angles of all the V0's found inside of the FCT that have both of the lepton tracks measured by the FCT.
+
+To use this macro, do
+```sh
+.L V0_mci.cxx+
+.x PaPlot.cxx
+```
+
+You need to change the variables
+```cpp
+TString input
+```
+to be the path to the V0sFCT.root file outputted by the macro V0_finder.cxx
+and
+```cpp
+c1->Print("YourOutputPath.pdf");
+```
