@@ -29,4 +29,7 @@ In the example this will cover the pseudorapidity range from -5 to -3 with 360 b
 
 In the example this will cover the radius up to 100 cm and the z up to 450 cm
 
-The program 
+The program matbudget_plot.cxx plots the material budget in terms of radiantion length as function of the pseudorapidity. 
+It reads in files of the material budget of the individual detectors. The example gives you the sum of all the components. When the individual contribution is required, run the example with one detector (or beam pipe). 
+matbudget_plot.cxx plots all the contribution on top of each other (also the sum, which functions as a check).
+Turn the ones you desire on and off
