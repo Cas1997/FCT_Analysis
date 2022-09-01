@@ -63,6 +63,7 @@ Doing all these steps allows you to run the FCT simulation such that it will det
 ```sh
 o2-sim -j 1 -m FCT FT3 TRK -e TGeant4 -g pythia8pp -n 5000 --configKeyValues "FCTBase.OnlyChargedParticles=false"
 ```
+This way, the o2sim_HitsFCT.root effectively functions as a filter for all the particles to reach the FCT.
 
 # How to use the to_reach_FCT.cpp program
 Provide the input path to the o2sim_HitsFCT file for the variable
