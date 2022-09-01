@@ -25,4 +25,4 @@ condor_submit fct_job.sub
 
 The environment in the file o2_env.sh is created by running prepare_env.sh
 
-o2_env.sh is depended on which version of O2 you use, therefor this is only an example.
+o2_env.sh is depended on which version of O2 you use, therefore this is only an example.
