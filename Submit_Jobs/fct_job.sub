@@ -5,6 +5,7 @@ output                = fct_outfile.txt
 error                 = fct_errors.txt
 getenv                = true
 should_transfer_files = YES
-transfer_input_files  = o2_env.sh
+initialdir            = job$(Process)
+transfer_input_files  = ../o2_env.sh
 requirements          = (Machine == "alice-serv14")
-queue
+queue 20
