@@ -23,6 +23,13 @@ These jobs are submitted with
 condor_submit fct_job.sub
 ```
 
+Their progress can subsequently be checked by using
+```
+condor_q
+```
+
+For more on HTcondor, I refer you to [HTCondor Read the Docs](https://htcondor.readthedocs.io/en/latest/users-manual/index.html)
+
 The environment in the file o2_env.sh is created by running prepare_env.sh
 
 o2_env.sh is depended on which version of O2 you use, therefore this is only an example. I encourage you to take a look inside of this file and try to understand what is going on and which paths are chosen. These are the paths that are used when alienv is loaded for O2. It will help you if you understand at least a little of what is going on :)
