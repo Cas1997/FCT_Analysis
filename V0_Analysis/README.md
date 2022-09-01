@@ -76,7 +76,7 @@ This macro produces a histogram of the pointing angles of all the V0's found ins
 To use this macro, do
 ```sh
 .L V0_mci.cxx+
-.x PaPlot.cxx
+.x V0_PaPlot.cxx
 ```
 
 You need to change the variables
@@ -88,3 +88,22 @@ and
 ```cpp
 c1->Print("YourOutputPath.pdf");
 ```
+
+# V0_PaProcPlot.cxx
+This macro plots the pointing angle distribution of different processes for which photons are created
+To use this macro, do
+```sh
+.L V0_mci.cxx+
+.x V0_PaProcPlot.cxx
+```
+
+You need to change the variables
+```cpp
+TString input
+```
+to be the path to the V0sFCT.root file outputted by the macro V0_finder.cxx
+and
+```cpp
+c1->Print("YourOutputPath.pdf");
+```
+to be your output path
