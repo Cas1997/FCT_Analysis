@@ -42,4 +42,32 @@ For this macro, you need to change the variable
 TString input
 ```
 to be the path to the MCTrack.root file that was outputted by MC_TrackFinder.cxx 
-This finds all the V0's and stores iomportant quantities (found in V0_mci.h) in a root file
+This finds all the V0's and stores important quantities (found in V0_mci.h) in a root file called V0sFCT.root
+
+A V0 is defined as follows: When either of the pair produced particles from a photon is measured, this photon, together with its lepton+ and lepton- is tagged as a V0.
+This means that V0's are saved that
+- Have only one of their l+ or l- leave a hit in the FCT
+- The leptons leave only one hit in the FCT (so only pass 1 layer of the FCT)
+- Find their conversion point to be outside of the volume of the FCT
+
+# V0_LocationPlot.cxx
+This macro plots the location of all V0's found in the FCT. 
+
+To use this macro, do
+```sh
+.L V0_mci.cxx+
+.x V0_LocationPlot.cxx
+```
+
+You need to change the variables
+```cpp
+TString input
+```
+to be the path to the V0sFCT.root file outputted by the macro V0_finder.cxx
+and
+```cpp
+c1->Print("YourOutputPath.pdf");
+```
+to be your output path
+
+# V0_PaPlot.cxx
