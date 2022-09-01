@@ -15,15 +15,18 @@ The aprameters of this command are:
 - matm.nphi
 - matm.phimin
 - matm.phimax
+
 In the example this will cover the phi range from min (0) to max (360) with 360 bins
 
 - matm.neta
 - matm.etamin
 - matm.etamax
+
 In the example this will cover the pseudorapidity range from -5 to -3 with 360 bins
 
 - matm.rmax
 - matm.zmax
+
 In the example this will cover the radius up to 100 cm and the z up to 450 cm
 
 The program 
