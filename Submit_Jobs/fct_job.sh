@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export ALIBUILD_WORK_DIR=/misc/alidata131/alice_u/cas/O2/alice/sw
+export ALIBUILD_WORK_DIR=<SomeFolder>/cas/O2/alice/sw
 eval `/usr/local/bin/alienv shell-helper`
 export PATH=${PATH}
 
