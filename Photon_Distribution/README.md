@@ -58,6 +58,10 @@ private:
   Int_t mNumberOfConverterLayers;
   Bool_t mOnlyChargedParticles;
 ```
+Rebuild your O2 with
+```sh
+ENABLE_UPGRADES=ON aliBuild build O2 --defaults o2
+```
 
 Doing all these steps allows you to run the FCT simulation such that it will detect all particles instead of just charged particles, like so
 ```sh
