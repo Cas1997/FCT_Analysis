@@ -22,3 +22,7 @@ Output: `fctOccupancy.root`
 `$ root.exe -q -b FCTTrackerChecker.C+`
 
 Output: `Fittercheck_fcttracks.root`
+
+# This is the adaptation of the [FT3 Tracker](https://github.com/rpezzi/ft3tracker) by Raffael Pezzi. Only names are changed such that it works for the FCT.
+
+However, this tracker jsut serves as an example. The FCT will get its magnetic field from a dipole magnet, whereas the FT3 gets its from a solenoid. Tracking is different for the detectors, but this nonetheless shows you a little of what can be done and how to access inforamtion of the TTrees produced by o2sim.
