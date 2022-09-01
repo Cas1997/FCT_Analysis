@@ -28,7 +28,7 @@ Their progress can subsequently be checked by using
 condor_q
 ```
 
-For more on HTcondor, I refer you to [HTCondor Read the Docs](https://htcondor.readthedocs.io/en/latest/users-manual/index.html)
+For more on HTcondor, I refer you to [HTCondor User's Manual](https://htcondor.readthedocs.io/en/latest/users-manual/index.html)
 
 The environment in the file o2_env.sh is created by running prepare_env.sh
 
